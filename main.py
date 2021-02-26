@@ -3,7 +3,7 @@ from flask import Flask, jsonify
 server = Flask(__name__)
 
 data = {
-  "message": "hello, world!"
+  "message": "wassup"
 }
 
 @server.route('/')
