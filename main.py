@@ -1,13 +1,13 @@
-from flask import Flask, jsonify
+from flask import Flask, render_template, request
 
-server = Flask(__name__)
+web_site = Flask(__name__)
 
-data = {
-  "message": "wassup"
-}
-
-@server.route('/')
+@web_site.route('/')
 def index():
-	return jsonify(data)
+	return render_template('index.html')
 
-server.run(host='0.0.0.0', port=8080)
+@web_site.route('/about')
+def about():
+	return render_template('about.html')
+
+web_site.run(host='0.0.0.0', port=8080)
