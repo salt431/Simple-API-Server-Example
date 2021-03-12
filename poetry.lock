@@ -27,6 +27,14 @@ dotenv = ["python-dotenv"]
 
 [[package]]
 category = "main"
+description = "Python command line tool that wrapps Flatpak-Builder"
+name = "flatpakdev"
+optional = false
+python-versions = "*"
+version = "0.1"
+
+[[package]]
+category = "main"
 description = "Various helpers to pass data to untrusted environments and back."
 name = "itsdangerous"
 optional = false
@@ -68,7 +76,7 @@ dev = ["pytest", "pytest-timeout", "coverage", "tox", "sphinx", "pallets-sphinx-
 watchdog = ["watchdog"]
 
 [metadata]
-content-hash = "063f8c74154580826be2e32820af9c11e8f1fb9bf35b7fddc1a48acd748fcb20"
+content-hash = "223e14a5e2250d7c70821deee4de421f9666bc0a8a9cd40b4a55c6e19a4002fe"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -79,6 +87,9 @@ click = [
 flask = [
     {file = "Flask-1.0.2-py2.py3-none-any.whl", hash = "sha256:a080b744b7e345ccfcbc77954861cb05b3c63786e93f2b3875e0913d44b43f05"},
     {file = "Flask-1.0.2.tar.gz", hash = "sha256:2271c0070dbcb5275fad4a82e29f23ab92682dc45f9dfbc22c02ba9b9322ce48"},
+]
+flatpakdev = [
+    {file = "flatpakdev-0.1.tar.gz", hash = "sha256:38b30fab9278cca58796d9068cf1a5b6db067a77ee019d9f0fd993edc5375de1"},
 ]
 itsdangerous = [
     {file = "itsdangerous-1.1.0-py2.py3-none-any.whl", hash = "sha256:b12271b2047cb23eeb98c8b5622e2e5c5e9abd9784a153e9d8ef9cb4dd09d749"},
